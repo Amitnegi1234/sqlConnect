@@ -9,7 +9,7 @@ app.get('/',(req,res)=>{
     res.send("hello node js")
 })
 app.use('/students',studentRoutes)
-db.sync({force:true}).then(()=>{
+db.sync({force:false}).then(()=>{
     app.listen(3000,()=>{
     console.log("running");
 })
