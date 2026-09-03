@@ -5,5 +5,6 @@ const studentController=require('../controllers/studentController')
 router.post('/add',studentController.addEntries)
 router.put('/update/:id',studentController.updateEntry)
 router.delete('/delete/:id',studentController.deleteEntry)
+router.post('/addingStudentWithCard',studentController.addingValuesToStudentAndIdentityTable)
 
 module.exports=router;
